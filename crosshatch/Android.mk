@@ -300,6 +300,18 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := CarrierWifi
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/product/priv-app/CarrierWifi/CarrierWifi.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := ConnMO
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/priv-app/ConnMO/ConnMO.apk
@@ -389,6 +401,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := EuiccSupportPixel
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GCS
+LOCAL_MODULE_OWNER := google
+LOCAL_SRC_FILES := proprietary/product/priv-app/GCS/GCS.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
@@ -569,18 +593,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := TetheringEntitlement
 LOCAL_MODULE_OWNER := google
 LOCAL_SRC_FILES := proprietary/product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := TmobileGrsuPrebuilt
-LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/product/priv-app/TmobileGrsuPrebuilt/TmobileGrsuPrebuilt.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
